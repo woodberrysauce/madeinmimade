@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 110" role="img" aria-labelledby="title">
+  <title id="title">Made in Mimade placeholder logo</title>
+  <rect width="520" height="110" fill="none"/>
+  <g fill="none" stroke="#1d1d2a" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 58h82l-10 20H28z"/>
+    <path d="M34 58c0-28 9-42 25-42 9 0 15 6 16 17 4-11 10-17 19-17 15 0 24 14 24 42"/>
+  </g>
+  <circle cx="51" cy="51" r="8" fill="#cd5a24"/>
+  <circle cx="83" cy="51" r="8" fill="#cd5a24"/>
+  <text x="132" y="76" fill="#1d1d2a" font-family="Inter,Arial,sans-serif" font-size="62" font-weight="800">Mimade</text>
+</svg>

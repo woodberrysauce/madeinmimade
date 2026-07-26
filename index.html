@@ -1,37 +1,159 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Made in Mimade</title>
-</head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Made in Mimade — creative digital product, UI/UX, web, and interactive experience studio."
+    />
+    <title>Made in Mimade</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+  </head>
 
-<body style="margin:0;background:rgb(219, 219, 219);">
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Made in Mimade home">
+        <img src="assets/logo_l.svg" alt="Made in Mimade" />
+      </a>
 
-    <!-- <div style="text-align:center;">  
-    <p>Email:</p>
-    <a href="info@madeinmimade.com" style="text-decoration:none;color:rgb(255, 255, 255);font-size:2rem;">info@madeinmimade.com</a>
-    </div> -->
-    
-    <div style="width:80%;background:#07078d;margin:0 auto;padding:2rem;border-radius:1rem;box-shadow:0px 0px 10px 0px rgba(0,0,0,0.75);">
-     
-    
-    <p style="color:rgb(255, 255, 255);font-size:2rem;">Email: 
-    <a href="mailto:info@madeinmimade.com" style="text-decoration:none;color:rgb(255, 255, 255);font-size:2rem;">info@madeinmimade.com</a>
-    
-    <img 
-    src="logo.png"
-    style="width:15vh;height:15vh;object-fit:contain;"
-    >
-    
-    </div>
-    
-    <div style="text-align:center;">
-    <img 
-    src="logo.svg"
-    style="width:80%;height:50vh;object-fit:contain;"
-    >
-    </div>
-    
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation"
+        aria-expanded="false"
+        aria-controls="main-navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-</body>
+      <nav class="main-nav" id="main-navigation" aria-label="Main navigation">
+        <a class="home-button pressable" href="#home">HOME</a>
 
+        <div class="nav-item">
+          <button class="nav-trigger" type="button" aria-expanded="false">
+            <span>Services &amp; Pricing</span>
+            <span class="nav-arrow" aria-hidden="true">⌄</span>
+          </button>
+          <div class="dropdown-panel">
+            <a href="#services">Product design</a>
+            <a href="#services">Web &amp; software</a>
+            <a href="#services">2D / 3D assets</a>
+          </div>
+        </div>
+
+        <div class="nav-item">
+          <button class="nav-trigger" type="button" aria-expanded="false">
+            <span>Work</span>
+            <span class="nav-arrow" aria-hidden="true">⌄</span>
+          </button>
+          <div class="dropdown-panel">
+            <a href="#gallery">Selected work</a>
+            <a href="#gallery">Experiments</a>
+            <a href="#gallery">Client projects</a>
+          </div>
+        </div>
+
+        <div class="nav-item">
+          <button class="nav-trigger" type="button" aria-expanded="false">
+            <span>About us</span>
+            <span class="nav-arrow" aria-hidden="true">⌄</span>
+          </button>
+          <div class="dropdown-panel">
+            <a href="#about">Our studio</a>
+            <a href="#about">How we work</a>
+            <a href="#about">Our values</a>
+          </div>
+        </div>
+
+        <div class="nav-item">
+          <button class="nav-trigger" type="button" aria-expanded="false">
+            <span>Contact us</span>
+            <span class="nav-arrow" aria-hidden="true">⌄</span>
+          </button>
+          <div class="dropdown-panel">
+            <a href="#process">Process</a>
+            <a href="#about">About</a>
+            <a href="mailto:info@madeinmimade.com">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="decorative-type" aria-hidden="true">
+          <span>Made</span>
+          <span>in</span>
+          <span>Mimade</span>
+        </div>
+
+        <div class="hero-content">
+          <h1 id="hero-title">
+            Turn your idea into a
+            <span>real product</span>
+          </h1>
+
+          <div class="intro-copy">
+            <p>无论您是游戏工作室还是软件公司，还是个人创业者，</p>
+            <p>我们都会为您提供所有前端客户能看到的部分的视觉支持。</p>
+            <p>我们是帮助 start up 的 start up。我们价格透明，并且价格灵活。</p>
+            <p>我们可以是你背后的支持者，也可以是你可靠的合伙人。</p>
+          </div>
+
+          <div class="hero-actions">
+            <a class="project-button pressable" href="#contact">
+              Build your Project
+              <span class="project-button-point" aria-hidden="true"></span>
+            </a>
+
+            <a class="gallery-button pressable" href="#gallery">
+              Explore Gallery
+            </a>
+          </div>
+        </div>
+
+        <aside class="social-links" aria-label="Social media">
+          <a href="#" aria-label="Facebook">
+            <img src="assets/social/facebook-placeholder.svg" alt="" />
+          </a>
+          <a href="#" aria-label="Instagram">
+            <img src="assets/social/instagram-placeholder.svg" alt="" />
+          </a>
+          <a href="#" aria-label="X">
+            <img src="assets/social/x-placeholder.svg" alt="" />
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <img src="assets/social/linkedin-placeholder.svg" alt="" />
+          </a>
+          <a href="#" aria-label="YouTube">
+            <img src="assets/social/youtube-placeholder.svg" alt="" />
+          </a>
+        </aside>
+      </section>
+
+      <section class="placeholder-section" id="services">
+        <h2>Services &amp; Pricing</h2>
+      </section>
+      <section class="placeholder-section" id="gallery">
+        <h2>Gallery</h2>
+      </section>
+      <section class="placeholder-section" id="about">
+        <h2>About us</h2>
+      </section>
+      <section class="placeholder-section" id="contact">
+        <h2>Let’s build something together.</h2>
+        <a href="mailto:info@madeinmimade.com">info@madeinmimade.com</a>
+      </section>
+    </main>
+  </body>
 </html>
